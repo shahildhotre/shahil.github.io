@@ -110,7 +110,7 @@
                     &nbsp;&nbsp;- Memory to Register pass<br>
                     • Reduced the number of instructions by 40%
                 </p>
-                <a href="#" class="btn">View Details</a>
+                <!-- <a href="#" class="btn">View Details</a> -->
             </div>
             <div class="project-card">
                 <h3>GPU Kernel Optimization [CUDA]</h3>
@@ -139,6 +139,15 @@
                 <p>
                     • Designed a 2-level cache & memory simulator having a prefetch unit with LRU replacement & Write Back Write Allocate policy<br>
                     • Performed profiling on different memory configurations and studied their performance on miss rate and Average Access time
+                </p>
+                <!-- <a href="#" class="btn">View Details</a> -->
+            </div>
+            <div class="project-card">
+                <h3>GPU Matrix Multiplication Optimization [CUDA, Tensor Core]</h3>
+                <p>
+                    • Developed a naive CUDA kernel for matrix multiplication, achieving an execution time of 500 microseconds for 1024x1024<br>
+                    • Optimized the kernel using shared memory tiling, and memory coalescing, reducing execution time to 150 microseconds while minimizing warp divergence and improving GPU utilization<br>
+                    • Integrated Tensor Cores with mixed precision (FP16/FP32) using CUTLASS, achieving a final execution time of 50 microseconds, representing a 10x improvement over the baseline
                 </p>
                 <!-- <a href="#" class="btn">View Details</a> -->
             </div>
@@ -171,7 +180,7 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <div class="contact-content">
+        <div class="contact-content" style="text-align: center;">
             <p>Get in touch with me at:</p>
             <a href="mailto:shahildhotre1902@gmail.com">shahildhotre1902@gmail.com</a>
             <div class="social-links">
