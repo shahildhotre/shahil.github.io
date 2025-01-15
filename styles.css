@@ -13,7 +13,7 @@
     --accent-color: #007bff;
 }
 
-/* Base styles */
+/* Base styles */ 
 body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
