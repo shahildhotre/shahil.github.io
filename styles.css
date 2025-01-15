@@ -38,8 +38,10 @@ body {
     /* background-image: url('/images/city-skyline.jpg'); */
     
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 /* Add overlay */
