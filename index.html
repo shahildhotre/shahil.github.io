@@ -35,6 +35,7 @@
         h2 {
             font-size: 2rem;
             margin-bottom: 1.5rem;
+            text-align: center;
         }
     </style>
 </head>
@@ -46,8 +47,8 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -56,20 +57,45 @@
     <section id="home">
         <div class="hero">
             <h1>Hi, I'm <span class="highlight">Shahil Manoj Dhotre</span></h1>
-            <h2 style="text-align: center;">Machine Learning Engineer</h2>
-            <p style="text-align: center;">Welcome to my portfolio website</p>
+            <h2 style="text-align: center;">I'm a Machine Learning Engineer with experience in AI/ML model optimization, Agentic systems, and Computer vision.</h2>
         </div>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
         <div class="about-content">
-            <p>I'm a Machine Learning Engineer with experience in AI/ML model optimization, computer vision, and full-stack development. My expertise spans across PyTorch, TensorRT, CUDA, and various ML frameworks.</p>
+            <p> I'm interested in optimizing AI/ML models for faster inference and developing agentic systems for complex tasks.</p>
             <div class="skills">
                 <h3>Skills</h3>
                 <ul>
-                    <li>Programming Languages: Python, C++, Object Oriented Programming, CUDA</li>
+                    <li>Programming Languages: Python, C++, Object Oriented Programming, CUDA, LLVM</li>
                     <li>ML & Data: LLM, Prompting, PyTorch, TensorFlow, Diffusion, Gen AI, CNN, Transformers, Scikit Learn, OpenCV</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h3>GenAI Research Volunteer - NC State</h3>
+                <p>November 2024 - Present</p>
+                <ul>
+                    <li>Transformed PyTorch semantic segmentation models to optimized formats using ONNX and TensorRT</li>
+                    <li>Utilizing various optimization techniques to improve inference speed by 30%</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <h3>Gen AI Engineer - CHIMA</h3>
+                <p>July 2024 - November 2024</p>
+                <ul>
+                    <li>Developed backend code in Python to design a multimodal system that generates product images using diffusion models.</li>
+                    <li>Optimized diffusion pipelines using PyTorch 2, achieving up to 3x inference speedup with techniques such as torch.compile, reduced precision (bfloat16), and dynamic quantization.</li>
+                    <li>Implemented advanced optimizations like SDPA, fused QKV projections, and convolution-to-linear layer conversion to reduce latency while maintaining output quality.</li>
+                    <li>Integrated AI-generated images with Image-to-Video models to animate product footage and create high-quality, engaging marketing campaign videos at 30 frames per second (FPS).</li>
+                    <li>Utilized Claude for prompts to ensure consistency in characters, visual styles, and camera angles throughout the videos.</li>
+                    <li>Built a robust agentic video editing pipeline using Python, LangGraph, Text-to-Image, Image-to-Video, and Text-to-Audio models, enabling conversational editing of generated videos.</li>
                 </ul>
             </div>
         </div>
@@ -79,50 +105,42 @@
         <h2>Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>GPU Kernel Optimization (CUDA)</h3>
-                <p>Developed a CUDA kernel for parallel vector summation with 30 microseconds execution time. Optimized kernel performance by minimizing warp divergence and managing shared memory, reducing execution time to 6 microseconds.</p>
+                <h3>Compiler Optimization [LLVM]</h3>
+                <p>
+                    • Utilized parser generators Flex & Bison to implement and generate IR of the language syntax & grammar for bitwise operations<br>
+                    • Optimized the generated LLVM IR code using Dead Code, Common Sub Expression elimination, and Memory to Register pass and reduced the number of instructions by 40%
+                </p>
                 <a href="#" class="btn">View Details</a>
             </div>
             <div class="project-card">
-                <h3>Image Classification Model Inference</h3>
-                <p>Built ResNet-18 model for CIFAR-10 classification using PyTorch, achieving 314.59 FPS. Implemented FP16 precision and converted to TensorRT, reaching 4716.63 FPS at FP16.</p>
+                <h3>GPU Kernel Optimization [CUDA]</h3>
+                <p>
+                    • Developed CUDA kernel for parallel vector summation achieving 30μs baseline performance<br>
+                    • Implemented optimization techniques including:<br>
+                    &nbsp;&nbsp;- Shared memory utilization<br>
+                    &nbsp;&nbsp;- Warp divergence minimization<br>
+                    &nbsp;&nbsp;- Memory coalescing<br>
+                    &nbsp;&nbsp;- Thread block optimization<br>
+                    • Achieved 5x speedup with final execution time of 6μs
+                </p>
                 <a href="#" class="btn">View Details</a>
             </div>
             <div class="project-card">
-                <h3>CrawlBot: Domain-Specific Pseudonymous Crawler</h3>
-                <p>Authored research paper on innovative web crawling technology.</p>
-                <a href="#" class="btn">View Paper</a>
+                <h3>Image Classification Model Inference [TensorRT]</h3>
+                <p>
+                    • Developed a ResNet-18 model to perform classification on a CUDA-enabled device for CIFAR-10 Dataset using PyTorch models for inference, achieving a high Frames Per Second (FPS) rate of 314.59.<br>
+                    • Implemented FP16 precision for PyTorch models, significantly improving inference speed to 1208.93 FPS.<br>
+                    • Converted PyTorch model to TensorRT, to achieve remarkable inference speed, with an FPS rate of 4716.63 at FP16.
+                </p>
+                <a href="#" class="btn">View Details</a>
             </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="experience-grid">
-            <div class="experience-card">
-                <h3>GenAI Research Volunteer - NC State</h3>
-                <p>November 2024 - Present</p>
-                <ul>
-                    <li>Transformed PyTorch models to optimized formats (TorchScript, ONNX, TensorRT)</li>
-                    <li>Achieved 30% performance boost through comprehensive benchmarking</li>
-                </ul>
-            </div>
-            <div class="experience-card">
-                <h3>Gen AI Engineer - CHIMA</h3>
-                <p>July 2024 - November 2024</p>
-                <ul>
-                    <li>Developed multimodal system for product image generation using diffusion models</li>
-                    <li>Implemented AI-generated image animations at 30 FPS</li>
-                    <li>Built robust agentic video editing pipeline using various AI models</li>
-                </ul>
-            </div>
-            <div class="experience-card">
-                <h3>Software Engineer - ElasticRun</h3>
-                <p>January 2021 - July 2022</p>
-                <ul>
-                    <li>Developed ML-based sales forecasting system with 70-80% accuracy</li>
-                    <li>Optimized ML model deployment reducing training time from 14 to 6 hours</li>
-                </ul>
+            <div class="project-card">
+                <h3>Microprocessor Architecture [C++, Memory Hierarchy]</h3>
+                <p>
+                    • Designed a 2-level cache & memory simulator having a prefetch unit with LRU replacement & Write Back Write Allocate policy<br>
+                    • Performed profiling on different memory configurations and studied their performance on miss rate and Average Access time
+                </p>
+                <a href="#" class="btn">View Details</a>
             </div>
         </div>
     </section>
