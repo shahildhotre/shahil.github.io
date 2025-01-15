@@ -23,7 +23,9 @@ body {
 
 /* Hero section */
 #home {
-    height: 100vh;
+    height: 60vh;
+    min-height: 400px;
+    max-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,10 +40,8 @@ body {
     /* background-image: url('/images/city-skyline.jpg'); */
     
     background-size: cover;
-    background-position: center center;
+    background-position: center 20%;
     background-repeat: no-repeat;
-    max-height: 100vh;
-    overflow: hidden;
 }
 
 /* Add overlay */
@@ -60,6 +60,7 @@ body {
 .hero {
     position: relative;
     z-index: 2;
+    padding: 2rem 0;
 }
 
 .hero h1 {
@@ -233,5 +234,10 @@ h2 {
     
     .project-grid {
         grid-template-columns: 1fr;
+    }
+    
+    #home {
+        height: 50vh;
+        min-height: 300px;
     }
 } 
